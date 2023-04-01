@@ -26,6 +26,17 @@ export const InfoText = styled.div`
   color: ${(props) => props.theme.colors.neutral[600]};
 `;
 
+export const InfoTag= styled.div`
+  line-height: 1.6;
+  font-size: ${(props) => props.theme.typography.m.fontSize};
+  background-color: ${(props) => props.theme.colors.green[100]};
+  color: ${(props) => props.theme.colors.green[200]};
+  padding: ${(props) => props.theme.space.xs} ${(props) => props.theme.space.m};
+  border-radius: 20px;
+  font-weight: 500;
+  margin: ${(props) => props.theme.space.s} 0;
+`;
+
 export const AccountSection = styled.div`
   padding: ${(props) => props.theme.space.m} 0;
 
@@ -42,6 +53,16 @@ export const AccountListItem = styled.div`
     margin-bottom: ${(props) => props.theme.space.m};
   }
 `;
+
+export const AccountListFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @media (max-width:  ${(props) => props.theme.breakpoints.xxs}px) {
+    flex-direction: column;
+  }
+`
 
 export const Inset = styled.div`
   padding: 0 ${(props) => props.theme.space.m};
